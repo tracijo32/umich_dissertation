@@ -1,0 +1,263 @@
+% The packages used here are just a sample. You may need others, and may not need some of these. It doesn't hurt to leave them in, unless they start to conflict with other packages you've added. Chapter 2 has example code for equations, figures, tables, citations, abbreviations, etc. If there are sections labeled 'optional' that you don't want, just comment them out. -jg
+
+\documentclass[reqno,12pt,oneside]{report} % right-side equation numbering, 12 point font, print one-sided 
+%\documentclass[reqno,12pt,twoside,openright]{report} % right-side equation numbering, 12 point font, print two-sided, Chapters start on odd pages. Rackham only accepts one-sided, so this is for personal printings.
+
+\usepackage{rac}         % Use Rackham thesis style file
+%\usepackage{/Users/tljohn/research/dissertation/tex/deluxetable}
+\usepackage{deluxetable}
+\usepackage{aas_macros}  % To allow the reading of ADS journal references in the bibliography
+\usepackage[intlimits]{amsmath} % Puts the limits of integrals on top and bottom
+\usepackage{amsxtra}     % Use various AMS packages
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{longtable}
+\usepackage{graphicx}    % Add some packages for figures. Read epslatex.pdf on ctan.tug.org
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{color}
+\usepackage{epsfig}
+\usepackage{subfigure}   % To make subfigures. Read subfigure.pdf on ctan.tug.org
+\usepackage{verbatim}
+\usepackage{natbib}      % Allows you to use BibTeX
+\usepackage[printonlyused]{acronym} % For the List of Abbreviations. Read acronym.pdf on ctan.tug.org
+\usepackage{setspace}    % Allows you to specify the line spacing
+\doublespacing           % \onehalfspacing for 1.5 spacing, \doublespacing for 2.0 spacing.
+\newcommand{\sun}{\ensuremath{\odot}} % sun symbol is \sun
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\MACSeleven}{MACS J1149.5+2223}
+\newcommand{\MACSzeroseven}{MACS J0717.5+3745}
+\newcommand{\MACSzerofour}{MACS J0416.1-2403}
+
+\newcommand{\hst}{\textit{HST}}
+\newcommand{\ds}{D_\mathrm{S}}
+\newcommand{\dls}{D_\mathrm{LS}}
+\newcommand{\dl}{D_\mathrm{L}}
+\newcommand{\zphot}{z_\mathrm{phot}}
+\newcommand{\zl}{z_\mathrm{l}}
+\newcommand{\zs}{z_\mathrm{s}}
+\newcommand{\rcut}{r_\mathrm{cut}}
+\newcommand{\rcore}{r_\mathrm{core}}
+\newcommand{\Lstar}{L^{\star}}
+
+\newcommand{\Nfid}{N_\mathrm{fiducial}}
+\newcommand{\LCDM}{$\Lambda$CDM}
+
+% name shortcuts
+\newcommand{\cluster}{SDSS~J1110+6459}
+%\newcommand{\giantarc}{SGAS~J111020.0+645950.8}
+\newcommand{\giantarc}{SGAS~1110}
+
+% redshifts
+\newcommand{\zlens}{0.659}
+\newcommand{\zA}{2.481}
+
+% measurements
+\newcommand{\msol}{\mathrm{M_\odot}}
+\newcommand{\Msol}{\mathrm{M_\odot}}
+
+% grid parameters
+\newcommand{\gridRadius}{25\arcsec}
+\newcommand{\gridPA}{12\degr S of W}
+\newcommand{\gridDepth}{3}
+\newcommand{\gridThreshold}{4}
+\newcommand{\gridShift}{0}
+\newcommand{\gridAvoidanceRadius}{7\farcs0}
+\newcommand{\gridResolution}{6\farcs25}
+\newcommand{\gridCutRadius}{34.85 kpc at $z=0.659$}
+\newcommand{\gridNodes}{32}
+
+% model
+\newcommand{\constraints}{48}
+\newcommand{\freePars}{46}
+\newcommand{\rmsi}{$\sim0\farcs$}
+\newcommand{\rmsiArc}{$\sim0\farcs$}
+
+\newcommand{\HST}{\textit{HST}}
+\newcommand{\sersic}{S\'{e}rsic}
+\newcommand{\JWST}{\textit{JWST}}
+\newcommand{\arcname}{SGAS~1110}
+
+\newcommand{\lengthofgal}{7~kpc}
+\newcommand{\totalmagnification}{$28\pm8$}
+\newcommand{\smallestscale}{$r=30$~pc}  % Rounded from 29.
+\newcommand{\largestclump}{$r=50$~pc}   % Rounded from 49
+\newcommand{\rangeofscales}{$r=30$--50~pc}  % ditto
+\newcommand{\fluxcompleteness}{$m_{AB}=33.2$ in F606W}
+\newcommand{\HaParatio}{8.45}  % JRR:  $8.45$ from Tab 4.4 of Ferland \& Osterbrock, for T=10^4, ne=100
+\newcommand{\ngalsinhexplot}{$N=3597$}
+%
+
+% Various theorem environments. All of the following have the same numbering
+% system as theorem.
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{prop}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{introduction}[theorem]{Introduction}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\numberwithin{theorem}{chapter}     % Numbers theorems "x.y" where x
+                                    % is the section number, y is the
+                                    % theorem number
+
+%\renewcommand{\thetheorem}{\arabic{chapter}.\arabic{theorem}}
+
+%\makeatletter                      % This sequence of commands will
+%\let\c@equation\c@theorem          % incorporate equation numbering
+%\makeatother                       % into the theorem numbering scheme
+
+%\renewcommand{\theenumi}{(\roman{enumi})}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% If printing two-sided, this makes sure that any blank page at the 
+% end of a chapter will not have a page number. 
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}
+\thispagestyle{empty}
+\newpage
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%This command creates a box marked ``To Do'' around text.
+%To use type \todo{  insert text here  }.
+
+\newcommand{\todo}[1]{\vspace{5 mm}\par \noindent
+\marginpar{\textsc{To Do}}
+\framebox{\begin{minipage}[c]{0.95 \textwidth}
+\tt\begin{center} #1 \end{center}\end{minipage}}\vspace{5 mm}\par}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\bibliographystyle{apj}    % Set the bibliography style. agu04, plain, alpha, etc.
+
+% Title page as required by Rackham dissertation guidelines
+\titlepage{Focusing cosmic telescopes: quantifying the systematics of strong lensing mass models in the era of precision lensing}{Traci Lin Johnson}{Doctor of Philosophy}
+{Astronomy and Astrophysics}{2018}
+{Professor Keren Sharon, Chair\\
+ Associate Professor Chris Miller\\
+ Professor Jon Miller\\
+ Professor August Evrard\\
+ Professor Jean-Paul Kneib, EPFL}
+
+% Begin the front matter as required by Rackham dissertation guidelines
+\initializefrontsections
+
+% Optional Frontispiece
+\frontispiece{\noindent \large An Astronut \\ \textit{When I grow up, I want to be an Astronut. I want to be an Astronut because I like to study space. And I like to study [constellations]. I know the order of the [planets]. I want to float in the space ship. And I think they make about \$100 dollars a day.} \\ - Traci, 2nd grade, Cherry View Elementary School}
+
+% Optional, but recommended, Copyright page
+\copyrightpage{Traci Lin Johnson}{tljohn@umich.edu}{0000-0002-8829-5303}
+
+% Page numbering. If you don't include a frontispiece or copyright page, you'll need to change this for two-sided printing.
+\makeatletter
+\if@twoside \setcounter{page}{4} \else \setcounter{page}{1} \fi
+\makeatother
+ 
+% Optional Dedication page
+\dedicationpage{For Brad.}
+
+% Optional Acknowledgements page
+\startacknowledgementspage
+\input{Intro/Acknowledgements}
+\label{Acknowledgements}
+
+% Optional Preface page
+%\startprefacepage
+%\input{Preface}
+%\label{Preface}
+
+% Table of contents, list of figures, etc.
+\tableofcontents     % Required
+\listoffigures       % Required if there is more than one figure
+\listoftables        % Required if there is more than one table
+%\listofmaps          % Required if there is more than one map
+\listofappendices    % Required if there is more than one appendix
+%\listofabbreviations % Optional. Abbreviations should be stored in a file named abbr.tex
+
+% Optional in-dissertation Abstract Page
+\startabstractpage
+%{Focusing cosmic telescopes: quantifying the systematics of strong lensing mass models in the era of precision lensing }{Traci Lin Johnson}{Chair: Keren Sharon}
+\input{Abstract/Abstract}
+\label{Abstract}
+
+\startthechapters 
+% The individual files for each of the chapters are put here.
+% Save each chapter of your thesis to a seperate tex file
+% and then use the \input command to include this file in your
+% thesis.  For instance you can save a file to "intro.tex" and 
+% then type \input{intro}. 
+
+ \chapter{Introduction}
+ \label{chap:Intro}
+ \input{Intro/Intro}
+
+\chapter{Lens models and magnification maps of the six Hubble Frontier Fields clusters}
+\label{chap:hff_clusters}
+\input{Chap2/chap2}
+ 
+\chapter{The systematics of strong lens modeling quantified: the effects of constraint selection and redshift information on magnification, mass, and multiple image predictability}
+\label{chap:ares_systematics}
+\input{Chap3/chap3}
+
+\chapter{Star Formation at $z=2.481$ in the Lensed Galaxy SDSS J1110+6459. I. Lens Modeling and Source Reconstruction}
+\label{chap:s1110}
+\input{Chap4/chap4}
+
+%\chapter{Star Formation at $z=2.481$ in the Lensed Galaxy SDSS J1110$+$6459:\\Star Formation down to 30~parsec scales}
+%\label{chap:clumps}
+%\input{Chap5/chap5}
+
+\startappendices
+ \appendix{Spectroscopy of Lensed Images in Hubble Frontier Fields Clusters Abell S1063 and Abell 2744}
+ \label{app:hff_spectroscopy}
+ \input{Appendices/Appendix_HFF_Spectroscopy}
+
+ \appendix{Hubble Frontier Fields Lens Model Constraints}
+ \label{app:hff_constraints}
+ \input{Appendices/Appendix_HFF_Constraints}
+
+ \appendix{Hubble Frontier Fields Lens Model Parameters}
+ \label{app:hff_parameters}
+ \input{Appendices/Appendix_HFF_Parameters}
+
+ \appendix{Constraints of Ares Fiducial Lens Model}
+ \label{app:constraints}
+ \input{Appendices/Appendix_ARES_Constraints}
+
+ 
+\startbibliography
+ \begin{singlespace} % Bibliography must be single spaced
+% \bibliography{References} % Use the BibTeX file ``References.bib''.
+\bibliography{/Users/tljohn/research/papers/bibdesk_library/lensing_papers.bib}
+ \end{singlespace}
+
+% An external Abstract that can be printed at the end of the document, 
+% for separate submission to Rackham. Comment it out when not needed. - jg
+%\startextabstractpage
+%{Focusing Cosmic Telescopes}{Traci Johnson}{Chair: Keren Sharon}
+%\input{Abstract/Abstract}
+%\label{ExtAbstract}
+
+\end{document}

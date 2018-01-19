@@ -1,0 +1,272 @@
+%===============================================================
+%   A Brief History of the Deflection of Light
+%===============================================================
+\section{A Brief History of the Deflection of Light}
+
+In the beginning, there was Newtonian gravity. For nearly 400 years, Newton's Laws of Motion and Gravity accurately predicted the movements of celestial bodies. The nature of light up until the late 19th and early 20th century was still a mystery, as well as to its relationship with gravity. Henry Cavendish in 1784 and later Johann von Soldner 1804 \textbf{CITATIONS}, posited that light could behave similarly as massive particles and be deflected in the vicinity of a strong gravitational potential. This deflection angle was computed to be
+
+\begin{equation}
+\alpha_\mathrm{Newton} = \frac{2GM}{c^2b}
+\end{equation}
+
+\noindent where $M$ is the mass of the object and $b$ is the impact parameter, or distance of closest approach to $M$.
+
+However, Albert Einstein's relativity does not allow for massive objects and light to travel through space in a similar manner, as light particles always have a spacetime interval of $ds^2=0$ (light always travels at $c$ in all reference frames). Thus, light will follow unique geodesics to those of massive particles when influenced by the bending of space and time by a massive object. Using the Schwarzchild metric for a point mass and following the weak field limit (i.e., $GM/c^2r$ \textless \textless\ 1 along the entire trajectory), one obtains an alternative result for the deflection of light:
+
+\begin{equation}
+\alpha_\mathrm{Einstein} = \frac{4GM}{c^2b} =  2\alpha_\mathrm{Newton}.
+\label{intro:eqn:deflection}
+\end{equation}
+
+This postulate of general relativity provided the first opportunity to test the controversial theory. Sir Arthur Eddington was intrigued by Einstein's theory, devised an experiment to measure the deflection of background stars by the Sun during the 1919 solar eclipse. Einstein predicted a deflection of 1.74 seconds of arc of the stars in the background Hyades cluster. On May 29, two teams in Sobral, Brazil and the island of Principe of the coast of Africa measured a deflection of $1.98\pm0.16$" (see Figure~\ref{intro:fig:eclipse}) and $1.6\pm0.40$", respectively, both well within two sigma of the prediction by Einstein and far ruling out the Newtonian prediction of 0.87". When the article was published on November 6th, 1919, Einstein became a world-wide celebrity overnight \textbf{CITATION}.
+
+% The citation for all the eclipse stuff is in  arXiv:astro-ph/0102462
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{Intro/1919_eclipse_positive.jpg}
+\caption[Photometric plates from the 1919 solar eclipse]{From Dyson, Eddington, \& Davidson (1919), original caption: ``From the report of Sir Arthur Eddington on the expedition to verify Albert Einstein's prediction of the bending of light around the sun. In Plate 1 is given a half-tone reproduction of one of the negatives taken with the 4-inch lens at Sobral. This shows the position of the stars, and, as far as possible in a reproduction of this kind, the character of the images, as there has been no retouching. A number of photographic prints have been made and applications for these from astronomers, who wish to assure themselves of the quality of the photographs, will be considered as as far as possible acceded to."}
+\label{intro:fig:eclipse}
+\end{figure}
+
+%===============================================================
+%   Extragalactic Gravitational Lensing
+%===============================================================
+
+\section{Extragalactic Gravitational Lensing}
+
+Fritz Zwicky and Albert Einstein both suggested that galaxies rather than stars would make for much stronger gravitational lenses. And indeed, later in the 20th century, astronomers began discovering this deflection of light, or gravitational lensing as it became known, by extragalactic sources. In rare cases, the deflection can be strong enough such that the light from the background source can travel multiple paths around the deflecting, or lensing, object, thus creating multiple images of the background source. In 1979, the ``Twin Quasar" was discovered -- two quasars located unusually close together in the sky, both behind a massive foreground galaxy, shown in Figure~\ref{intro:fig:quasar}. Due to the similar redshifts and spectra of the quasars, it was deduced that they were lensed images of the same background quasar.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{Intro/twin_quasar.png}
+\caption[\hst\ image of the Twin Quasar]{{\it Hubble Space Telescope} (\hst) image of the famous Twin Quasar. From  ``Seeing double". ESA/Hubble Picture of the Week. Retrieved 30 November 2017.}
+\label{intro:fig:quasar}
+%http://www.spacetelescope.org/images/potw1403a/
+\end{figure}
+
+Galaxy clusters are the most massive gravitationally-bound objects in the Universe, consisting of hundreds of galaxies clustered within virial radius of on the order of a megaparsec. Zwicky used galaxy clusters to hypothesize the existence of an invisible mass in galaxy clusters, as the velocity dispersion of the galaxies suggested the total masses of these clusters to be $400\times$ higher than the mass implied by the star light of the galaxies. This dark matter, as it has come to be known, has been proven time and time over to exist. The mass of typical galaxy cluster consists of only $\sim1\%$ that of the baryonic component of the cluster members and nearly $\sim90\%$ dark matter. The remaining $\sim9\%$ is contained in the 10 million degree intragalactic medium, which would have been ``invisible" to Zwicky, but today is visible with X-ray telescopes.
+
+Certain galaxy clusters are capable of behaving as gravitational lenses, provided they are massive and have an ideal mass profile, which we will discuss later. Finding these lenses; however, would prove quite difficult as they would have to be very bright and highly magnified to be detected, being as they were billions of light years away, and distorted significantly to be seen as obvious signs of lensing. This work would have been impossible on photographic plates as faint lensed galaxies could easily be mistaken for cluster member galaxies or optical defects in the plate. Ultimately, it took the sensitivity and resolution of the CCD camera that allowed for the discovery of gravitational lenses. And indeed, the first spectroscopically-confirmed cluster lensed galaxy was discovered in the field of Abell 370 in 1986, shown in Figure~\ref{intro:fig:a370}. Interestingly, we will learn more about this cluster using sophisticated gravitational lens modeling in Chapter 2.
+
+\begin{figure}
+\raisebox{50pt}{\includegraphics[width=0.35\textwidth, trim=0 10pt 0 0, clip, angle=-28]{Intro/soucail88.png}}
+\includegraphics[width=0.55\textwidth, trim=100pt 200pt 100pt 200pt, clip]{Intro/a370_hff.jpg}
+\caption[Images of Abell 370 -- the first cluster lens]{Left: From \citet{Soucail:1988kx}, original caption: ``CCD frame of the giant arc in A370. This picture was obtained by J.L.~Prieur at the prime focus of the 3.60m Canada-France-Hawaii telescope on October 25th, 1987. The CCD was a $640\times1024$ RCA2: scale 0.2"/pixel -- seeing 0.7", with an exposure time of 10 minutes in white light. Note the shape of the object \#37, which was already suspected based on its spectrum \citet{Soucail:1987sf}", meaning that since the object is not at the cluster redshift, but indeed behind it and being lensed into a fantastic arc. Right: 140-orbit \hst\ image of Abell 370 from the Hubble Frontier Fields Director's Discretionary Program. From ``The last of the Frontier Fields -- Abell 370. STScI. Retrieved 30 November 2017.}
+% https://www.spacetelescope.org/images/heic1711a/
+\label{intro:fig:a370}
+\end{figure}
+
+%===============================================================
+%   Gravitational Lensing Theory
+%===============================================================
+
+\section{Gravitational Lensing Theory}
+
+\subsection{The one-dimensional lensing equation}
+
+\begin{figure}
+\includegraphics[width=\textwidth, trim=75pt 75pt 75pt 75pt]{Intro/lens_diagram.pdf}
+\caption[Diagram of gravitational lensing parameters]{Diagram showing the definitions of angles and distances used for deriving the lens equation.}
+\label{intro:fig:diagram}
+\end{figure}
+
+Since the distances of between the lens, source, and observer much larger than the sizes of the lens itself, it is safe to use the ``thin lens approximation" popular in optics where we assume an instantaneous deflection of the light on a plane of mass created by the lens. Therefore, we envision the geometry of the lensing using Figure~\ref{intro:fig:diagram}. The distances $\dl$, $\ds$, and $\dls$ are the angular diameter distances between the observer-lens, observer-source, and lens-source, respectively. We define the angle between the lens and source in the observer's frame to be $\beta$ and the angle between the lens and of the apparent position of the image of the source to be $\theta$. The angle $\hat\alpha$ is the deflection angle computed by Einstein in (\ref{intro:eqn:deflection}). Using the small-angle approximation, we can write
+
+\begin{equation}
+\theta \ds = \beta \ds + \hat\alpha \dls.
+\end{equation}
+
+\noindent and after rearranging, we get that
+
+\begin{equation}
+\beta(\theta) = \theta - \frac{\dls}{\ds} \hat\alpha,
+\end{equation}
+
+\noindent known as the lensing equation. Here, we have redefined $\beta$ as a function of $\theta$ as every image will map to only a single source, which should be fairly intuitive. We can also define another variable
+
+\begin{equation}
+\alpha \equiv  \frac{\dls}{\ds} \hat\alpha,
+\label{intro:eqn:dlsds}
+\end{equation}
+
+\noindent which is the angular offset between the image and the source at the location of the observer. While $\hat\alpha$ will always remain constant for a given impact parameter, the observed deflection depends on the geometry of the lensing system, i.e., the relative distances to the source and lens.
+
+\subsection{Lensing in two-dimensions and magnification}
+\label{intro:sec:magnification}
+
+We have so far been working in one dimension considering positions of sources and images on singular axes. The solutions hold for any axe-symmetrical lens; however, in nature, we must consider that mass distributions are more complex, and thus will cause a dependence on position angle of the source rather than purely the impact parameter, $\theta\dl$. In the simple case shown in Figure~\ref{intro:fig:diagram}, our one-dimensional lens has produced two point source images. This is also true if we extend the solution to two-dimensions, except in the instance where source is directly behind the lens ($\beta=0$). In this case, the solution is a circle (or ring) of radius
+
+\begin{equation}
+\theta = \alpha = \frac{\dls}{\ds} \frac{4GM}{c^2} \frac{1}{\theta \dl}
+\end{equation} 
+
+\noindent from which we define the Einstein radius as
+
+\begin{equation}
+\theta_E^2 \equiv \frac{4GM}{c^2} \frac{\dls}{\dl\ds}.
+\end{equation}
+
+\subsection{Lens mapping}
+
+Most sources in the Universe are not point sources and can be magnified, in that the solid angle their images subtend is larger than that of the source. The exact definition of the magnification is the ratio of these solid angles,
+$\mu \equiv \Delta \theta/\Delta \beta$. We can also treat lensing as a mathematical transformation of shapes into the observed shapes of the images. We can transform the lens equation into a transformation matrix
+
+\begin{equation}
+A_{ij} = \frac{\partial \beta_{ij}}{\partial \theta_{ij}} = \delta_{ij} - \frac{\partial{\alpha_{i}}}{\partial{\theta_{j}}} = 
+	\begin{bmatrix}
+		1-\kappa-\gamma_1 & \gamma_2 \\
+		\gamma_2 & 1-\kappa+\gamma_1
+	\end{bmatrix},
+\end{equation}
+
+\noindent where we have defined the new terms
+
+\begin{align}
+\kappa &= \frac{1}{2} \left(\frac{\partial{\alpha_{1}}}{\partial{\theta_{1}}}+\frac{\partial{\alpha_{2}}}{\partial{\theta_{2}}}\right) = \frac{1}{2} \nabla_{ij} \alpha_{ij} = \frac{\Sigma}{\Sigma_{crit}} \label{intro:eqn:kappa} \\
+\gamma_1 &= \frac{1}{2} \left(\frac{\partial{\alpha_{1}}}{\partial{\theta_{1}}}-\frac{\partial{\alpha_{2}}}{\partial{\theta_{2}}}\right) \\
+\gamma_2 &= \frac{\partial{\alpha_{1}}}{\partial{\theta_{2}}} = \frac{\partial{\alpha_{2}}}{\partial{\theta_{1}}} \\
+\gamma^2 &= \gamma_1^2 + \gamma_2^2
+\end{align}
+
+\noindent with $\Sigma$ representing the projected surface mass density of the lens plane, with critical surface mass density equal to
+
+\begin{equation}
+\Sigma_\mathrm{crit} = \frac{c^2}{4\pi G} \frac{\ds}{\dls\dl}.
+\end{equation}
+
+\noindent Strong gravitational lensing, the formation of multiple and/or highly distorted images, occurs when $\kappa>1$. There are two parts of (\ref{intro:eqn:kappa}) required for lensing, a massive lens ($\sigma$) and the proper geometrical alignment ($\Sigma_\mathrm{crit}$).
+
+The magnification map can be determined by taking the inverse determinant of the transformation matrix:
+
+\begin{equation}
+\mu^{-1} = |\det A| = |(1-\kappa)^2 - \gamma^2|.
+\end{equation}
+
+\noindent It is possible for the magnification to be smaller than one (i.e., demagnified images) as well as become infinite. However, the infinitesimally small area in the image plane where the magnification is infinite. The eigenvalues of $A$ tell us where this occur:
+
+\begin{align}
+1-\kappa-\gamma &= 0 \\
+1-\kappa+\gamma &= 0.
+\end{align}
+
+\noindent These describe the tangential and radial critical curves in the image plane, respectively. These are the lines of symmetry between image pairs, reflected either tangentially or radially. Image pairs will have opposite parity and will be mirror images of one another. We can use the lens equation to map these curves to the source plane, producing caustics that inform us on the number of images the lens will produce. The number of images must always be odd, with two additional images being formed for each caustic the source falls within. Often times one of these images is highly demagnified and/or lies behind the bright lens, thus is not always observed and why there are reports of ``double" or ``quad" configurations in the literature. Typical image configurations and their respective source locations are shown in Figure~\ref{intro:fig:image_config}.
+
+For the remainder of this work, we will refer to ``strong" gravitational lensing as the phenomenon in which lensing results in multiple and/or highly-distorted images of the background source.
+
+\begin{figure}
+\centering
+\includegraphics[height=0.8\textheight]{Intro/image_config.png}
+\caption[Strong lensing caustics, critical curves, and multiple image configurations]{From \citet{Kneib:2011qy}, original caption: ``Multiple-image configurations produced by a simple elliptical mass distribution. The panel (S) shows the caustic lines in the source plane and the positions numbered 1 to 10 denote the source position relative to the caustic lines. The panel (I) shows the image of the source without lensing. The panels (1) to (10) show the resulting lensed images for the various source positions. Certain configurations are very typical and are named as follows: (3) radial arc, (6) cusp arc, (8) Einstein cross, (10) fold arc."}
+\label{intro:fig:image_config}
+\end{figure}
+
+\section{Strong gravitational lens modeling}
+
+\subsection{First-order approximation: Einstein radius}
+
+As we found in \S~\ref{intro:sec:magnification}, sources which are almost perfectly aligned with the lens will produce an Einstein ring. By assuming that the lens is axisymmetric, we can determine the total mass within this ring by computing the Einstein radius, which yields
+
+\begin{equation}
+M(<\theta_E) = \pi (\theta_E \dl)^2 \Sigma_\mathrm{crit}.
+\label{intro:eqn:einstein_mass}
+\end{equation}
+
+Figure~\ref{intro:fig:einstein_ring} shows examples of nearly perfect Einstein rings where this approximation can be made. Typical values for $\theta_E$ in clusters are on the order of $\sim$15", translating to physical scales on the order of a few hundred kiloparsecs. All other estimates for masses based on astronomical observables (ex., X-ray, Sunyaev-Zel'dovich effect, galaxy dynamics, weak lensing, galaxy counts, etc.) are sensitive to the masses at much larger radii ($\sim$1 Mpc). Thus, strong lensing provides a unique estimate for the masses as the very cores of clusters. In conjuction with other techniques, strong lensing can be used to measure the mass-concentration relationship of galaxy clusters, which helps inform on their formation history.
+
+\begin{figure}
+\centering
+\includegraphics[height=0.3\textheight]{Intro/einstein_ring_1.png}
+\includegraphics[height=0.3\textheight]{Intro/einstein_ring_2.png}
+\caption[\hst\ Einstein Rings]{Two famous Einstein rings imaged with the \hst. (Left): LRG~3-757 nearly forms a perfect ring around the massive elliptical galaxy. (Right): Galaxy cluster SDSS~J1038+4849 forms a pseudo-Einstein ring with partial rings formed from several lensed background sources.}
+% http://apod.nasa.gov/apod/ap111221.html
+% https://en.wikipedia.org/wiki/Einstein_ring#cite_note-NASA-20150210-6
+\label{intro:fig:einstein_ring}
+\end{figure}
+
+However, galaxy clusters are not necessarily axisymmetric and contain a lot of substructure in the form galaxies, which perturb the local lensing potential. While it is a close approximation, a precise determination of the mass distribution requires more careful modeling which can take into account shape and substructure of the cluster.
+
+\subsection{Lens modeling}
+
+A more precise model of the lensing mass can be achieved using the positions of multiple images. By finding a deflection field that maps all multiple images to a single position in the source plane, a estimate for the mass can be computed using (\ref{intro:eqn:kappa}). Using more sets of multiple images will help to further constrain the deflection field at different radii. After examining (\ref{intro:eqn:einstein_mass}), we see that because $\Sigma_\mathrm{crit}$ is linear with $\alpha$ and thus scales in the same manner as (\ref{intro:eqn:dlsds}), having a range of redshifts from different sources will produce a range of Einstein radii, which will help to constrain the slope of the mass distribution (such as the cluster in the right image of Figure~\ref{intro:fig:einstein_ring}).
+
+The general approach to lens modeling involves implementing a parameterized description of the mass distribution and exploring parameter space to find the deflection field that best reproduces the observed image configuration. These approaches fall into two categories: ``parametric" and ``non-parametric". The former involves defining the surface mass density of the cluster and its galaxies in terms of radial basis functions, such as an isothermal sphere or a Navarro, Frenk, and White profile (NFW)\citep[NFW; ][]{Navarro:1997qa}. These methods rely heavily on the assertion that ``light traces mass." Therefore, the total mass is scaled by the total light from the galaxy, usually following the empirical fundamental plane of luminosity, radius, and velocity dispersion of elliptical galaxies \citep{Gudehus:1973kq}. ``Non-parametric" methods allow for more flexible characterization of the mass distribution by employing a either a pixelized array of masses or a grid of radial basis functions that can each fluctuate in total mass to affect the localized deflection near multiple images as well as the overall shape of the mass distribution. Generally, this method does not force the notion that galaxies must have mass, but allows for the image configurations to constrain the masses on smaller-scale structures as needed to reproduce the lensing effect.
+
+The modus operandi of this author is a parametric method established by the \texttt{LENSTOOL} software \citet{Jullo:2007lr} and embodies lens modeling inquiry presented in this dissertation. Therefore, detailed discussions of the variants of non-parametric methods is beyond the scope of this work.
+
+\subsubsection{Bayesian statistics and model optimization}
+
+Regardless of the modeling method, nearly all have settled on a exercising a Bayesian approach, where optimizing a model depends not only on its fitness, but also information about the parameters obtained a priori. The Bayes' theorem is defined
+
+\begin{equation}
+P(\vec{p} | D ) = \frac{P(\vec{p}) P(D | \vec{p} ) }{P(D)}
+\label{intro:eqn:bayes}
+\end{equation}
+
+\noindent where $D$ are the observed data, and $\vec{p}$ contains the parameters of the model. Let us break down each component of (\ref{intro:eqn:bayes}):
+
+\begin{itemize}
+\item $P(\vec{p} | D )$: The posterior probability distribution -- the probability of the model given the data. In this instance, the data are the locations of the multiple images along with their distance from the lens and observer (i.e., redshift).
+\item $P(\vec{p})$: The prior. This term is the a probability that a particular model is accurate based on a priori information.
+\item $P(D | \vec{p} )$:  The likelihood of getting the data given the parameters of the model. Non-Bayesian modeling focuses this term in optimization (i.e., maximum likelihood estimation) and de-regulates the prior.
+\item $P(D)$: The evidence. This term is the probability that a particular model is valid independent of all other variables, which effectively acts as Occam's razor: ``All things being equal, the simplest solution tends to be the best one." The evidence normalizes the posterior probability distribution.
+\end{itemize}
+
+Bayes' theorem can easily be applied to strong lens modeling once we define a likelihood function to include in our optimization. The likelihood function will take the form
+
+\begin{equation}
+P(D | \vec{p} ) = \prod_{i=1}^N \frac{1}{  \prod_{j=1}^{n_i} \sigma_{ij} \sqrt{2\pi} } \exp^{-\frac{\chi_i^2}{2}},
+\label{intro:eqn:likelihood}
+\end{equation}
+
+\noindent where $N$ is the number of sources, $n_i$ is the number of images of each source $i$, and $\sigma_{ij}$ is the measurement error image $j$ of source $i$. By minimizing $\chi^2$, we will produce the maximum likelihood model. As stated earlier, our goal in lens modeling is to find the which finds a solution with the smallest scatter between the source positions mapped to each of its images. Defining the likelihood in this manner is called source plane optimization. While this still solves the lens equation, it is not ideal as the exact position of the sources are unknown the the observer. The more appropriate method would be image plane optimization, which involves an extra step of ray tracing the source position of each image back out to the image plane and measuring the scatter of the predicted images. However, this second step is much more computationally intensive due to the ray tracing, which is required because the lens equation is not reversible. The $\chi_i^2$ function for each source $i$ will then take the form
+
+\begin{equation}
+\chi^2 = \sum_{j=1}^{n_i} \frac{[\theta_\mathrm{obs}^j - \theta^j (\vec{p})]^2}{\sigma_{ij}^2},
+\label{intro:eqn:chi2}
+\end{equation}
+
+\noindent where $\theta^j (\vec{p})$ is the predicted image position ray traced to the observed image position $\theta_\mathrm{obs}^j$. Examining this equation further, we can see that image plane optimization will ensure that models which produce additional images than those observed are likely to be rejected as they will produce much higher $\chi^2$ than models with fewer images (smaller $n_i$).
+
+It should be noted that this method could be improved by including additional information about the lensing could be included in the optimization, such as magnification, time delays, flexion (i.e., shape), which could be added in quadrature to (\ref{intro:eqn:chi2}). Some lens modeling methodologies do include these terms; however, for this work, we will only consider image positions as the primary constraint.
+
+\subsubsection{Computational methods}
+
+The \texttt{LENSTOOL} software utilizes a Markov Chain Monte Carlo (MCMC) to sample parameter space to determine the shape of the posterior probability distribution. In the MCMC burn-in phase, ``walkers" of models are initialized with a set of parameters randomly sampled from the current posterior probability distribution. At the first stage, the likelihood has not been sampled yet, so it is not included in the initial determination of the posterior. This is done by replacing the likelihood in Bayes' theorem (\ref{intro:eqn:bayes} with the term $P(D | \vec{p} )^\lambda$, where $\lambda$ is a ``cooling" term. At the beginning, $\lambda=0$, so in the analogy to thermodynamics, the model selection is ``hot" and samples from a wide range of values in parameter space, ensuring that the MCMC can find a global maximum likelihood. The posterior probability for each walker is compute. A new $\vec(p)$ is selected for each walker and given a probability to jump based on the ratio of the posterior probability of the current position and the new position. Walkers will tend to jump to higher posterior probabilistic positions in parameter space as the chain continues to form, all while $\lambda$ is slowly increasing from 0 to 1 at a rate chosen to insure a smooth convergence towards a colder posterior probability distribution. After $\lambda=1$, the burn-in phase is complete and the changes are re-initialized from the last position in parameter spaces for all the walkers. Using the full Bayes' theorem, a new MCMC runs to sample the posterior probability distribution.
+
+\subsection{Data for cluster lensing}
+
+Lens modeling has benefited from the imaging CCDs aboard the {\it Hubble Space Telescope} (\hst). The high sensitivity and high resolution allow for easier detection and identification of multiple image systems to be used in the modeling. The first remarkable instance of using \hst\ for cluster lensing of Abell 1689 imaged with the Wide Field Planetary Camera 2 (WFPC2), show in Figure~\ref{intro:fig:a1689}. \citet{Broadhurst:2005qy} were able to map the mass distribution in fine detail using over a hundred multiple images from 30 individual background sources. Shortly after the servicing missions to the \hst\ in 2009, the new Advanced Camera for Surveys (ACS) and Wide Field Camera 3 (WFC3) ignited the field of cluster strong lensing with several groups working to develop new lens modeling techniques. These cameras made it possible for several multiple images to be detected with only a few orbits, depending on the cluster. 
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Intro/a1689.jpg}
+\caption[Abell 1689]{From \citet{Broadhurst:2005qy}: \hst/WFPC2 image of Abell 1689 with all 106 images identified in green circles.}
+\label{intro:fig:a1689}
+\end{figure}
+
+\section{Fantastic lenses and where to find them}
+
+The selection techniques for galaxy clusters exhibiting strong gravitational lensing can generally be split into two categories: ``high mass" and ``high magnification." Galaxy clusters may be selected by mass for lensing, as those more massive will tend to provide a larger cosmological volume for which $\kappa>1$, thus having high cross sections for lensing many background galaxies. However, galaxies need not be massive to lens a single galaxy to a very high magnification ($\mu>30$). The techniques for finding these clusters are different as are their scientific applications.
+
+\subsection{Surveys for finding clusters}
+
+Some of the first cluster lenses were identified in wide-field optical surveys. For example, the Abell clusters \citep{Abell:1958mz,Zwicky:1968rm,Abell:1989ly} were found in large surveys of photographics plates and identified based on the clustering of several massive red galaxies located within a few arcminutes of one another, all with similar photometric colors. Generally speaking, more massive clusters tend to have higher galaxy membership, or ``richness." Abell 1689 and Abell 370, as we discussed earlier, are prime examples. With digitized data, clusters can be found in optical/near-infrared surveys using algorithms aimed at identifying clusterings of close in photometric redshift estimations \citep{Rykoff:2014rz} and by identifying the red sequence of early-type galaxies on a color-magnitude diagram \citep{Gladders:2000kq}.
+
+With the advent of Xray telescopes, more massive clusters were able to be identified. A hot ionized intercluster medium fills the space between galaxies. In order for this gas to maintain hydrostatic equilibrium within the gravitational potential of the cluster, it must be a temperature of order $10^7$ to $10^8$ K, with $M\propto T_X^{3/2}$ based on theoretical arguments \citep{Horner:1999rz}. Plasmas at this temperature will emit high energy photons on the order of a few keV via thermal bremsstrahlung radiation. Massive clusters ($T>5$ keV) can be targeted and identified as lensing clusters with optical imaging. The Massive Cluster Survey \citep[MACS; ][]{Ebeling:2001rt} carried out this method by applying Xray brightness and hardness cuts to sources in the ROSAT All Sky Survey and cross-matched with optical surveys and follow-up observations to find the most massive galaxy clusters at $z>0.3$.
+
+The hot intercluster medium of also provides a second means for detection. Photons from the cosmic microwave background are cooler than the gas surrounding galaxy clusters and can receive an energy boost from inverse Compton scattering. This phenomenon is known as the Sunyaev-Zel'dovich effect. As a result, the CMB photons passing through a galaxy cluster will ``disappear" at the frequencies below the thermal null frequency of the CMB at $\sim220$~GHz and ``reappear" at higher frequencies. The most massive galaxy cluster beyond $z>0.7$, nicknamed ``El Gordo", was found in by the Atacama Cosmology Telescope (ACT, \textbf{CITATION NEEDED}). Over \textbf{A REALLY BIG NUMBER} of galaxy clusters have been identified in by the South Pole Telescope (SPT) and by the Planck Telescope.
+
+\subsection{Discovering galaxies at cosmic dawn}
+
+
+
+\subsection{High-resolution galaxies at cosmic noon}
+
+\section{Systematics of strong lens modeling}
+
+\section{Dissertation overview}
+
+
+
+
