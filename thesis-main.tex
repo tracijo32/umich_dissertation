@@ -165,7 +165,7 @@
 \initializefrontsections
 
 % Optional Frontispiece
-\frontispiece{\noindent \large An Astronut \\ \textit{When I grow up, I want to be an Astronut. I want to be an Astronut because I like to study space. And I like to study [constellations]. I know the order of the [planets]. I want to float in the space ship. And I think they make about \$100 dollars a day.} \\ - Traci, 2nd grade, Cherry View Elementary School}
+%\frontispiece{\noindent \large An Astronut \\ \textit{When I grow up, I want to be an Astronut. I want to be an Astronut because I like to study space. And I like to study [constellations]. I know the order of the [planets]. I want to float in the space ship. And I think they make about \$100 dollars a day.} \\ - Traci, 2nd grade, Cherry View Elementary School}
 
 % Optional, but recommended, Copyright page
 \copyrightpage{Traci Lin Johnson}{tljohn@umich.edu}{0000-0002-8829-5303}
@@ -176,11 +176,12 @@
 \makeatother
  
 % Optional Dedication page
-\dedicationpage{For Brad.}
+%\dedicationpage{For Brad.}
 
 % Optional Acknowledgements page
 \startacknowledgementspage
-\input{Intro/Acknowledgements}
+%\input{Intro/Acknowledgements}
+TBD
 \label{Acknowledgements}
 
 % Optional Preface page
@@ -199,7 +200,8 @@
 % Optional in-dissertation Abstract Page
 \startabstractpage
 %{Focusing cosmic telescopes: quantifying the systematics of strong lensing mass models in the era of precision lensing }{Traci Lin Johnson}{Chair: Keren Sharon}
-\input{Abstract/Abstract}
+%\input{Abstract/Abstract}
+TBD
 \label{Abstract}
 
 \startthechapters 
@@ -221,13 +223,15 @@
 \label{chap:ares_systematics}
 \input{Chap3/chap3}
 
-\chapter{Star Formation at $z=2.481$ in the Lensed Galaxy SDSS J1110+6459. I. Lens Modeling and Source Reconstruction}
+\chapter{Star Formation at $z=2.481$ in the Lensed Galaxy SDSS J1110$+$6459: Lens Modeling and Source Reconstruction}
 \label{chap:s1110}
 \input{Chap4/chap4}
 
-%\chapter{Star Formation at $z=2.481$ in the Lensed Galaxy SDSS J1110$+$6459:\\Star Formation down to 30~parsec scales}
-%\label{chap:clumps}
+\chapter{Star Formation at $z=2.481$ in the Lensed Galaxy SDSS J1110$+$6459: Star Formation down to 30~parsec scales}
+\label{chap:clumps}
 %\input{Chap5/chap5}
+
+\chapter{Future directions and conclusion}
 
 \startappendices
  \appendix{Spectroscopy of Lensed Images in Hubble Frontier Fields Clusters Abell S1063 and Abell 2744}
@@ -249,8 +253,7 @@
  
 \startbibliography
  \begin{singlespace} % Bibliography must be single spaced
-% \bibliography{References} % Use the BibTeX file ``References.bib''.
-\bibliography{/Users/tljohn/research/papers/bibdesk_library/lensing_papers.bib}
+ \bibliography{References} % Use the BibTeX file ``References.bib''.
  \end{singlespace}
 
 % An external Abstract that can be printed at the end of the document, 

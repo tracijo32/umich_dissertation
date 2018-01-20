@@ -2,47 +2,49 @@ This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis-main.aux
 The style file: apj.bst
-Database file #1: /Users/tljohn/research/papers/bibdesk_library/lensing_papers.bib.bib
+Database file #1: References.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 179 entries,
+Warning--empty publisher in Zwicky:1968rm
+You've used 182 entries,
             3085 wiz_defined-function locations,
-            2015 strings with 77023 characters,
-and the built_in function-call counts, 105839 in all, are:
-= -- 7210
-> -- 10879
+            2038 strings with 77864 characters,
+and the built_in function-call counts, 107319 in all, are:
+= -- 7322
+> -- 11001
 < -- 26
-+ -- 3614
-- -- 3895
-* -- 10583
-:= -- 20928
-add.period$ -- 179
-call.type$ -- 179
-change.case$ -- 1173
-chr.to.int$ -- 172
-cite$ -- 179
-duplicate$ -- 3397
-empty$ -- 5016
-format.name$ -- 4055
-if$ -- 20086
++ -- 3654
+- -- 3939
+* -- 10715
+:= -- 21209
+add.period$ -- 182
+call.type$ -- 182
+change.case$ -- 1192
+chr.to.int$ -- 175
+cite$ -- 183
+duplicate$ -- 3454
+empty$ -- 5107
+format.name$ -- 4102
+if$ -- 20377
 int.to.chr$ -- 8
 int.to.str$ -- 0
-missing$ -- 177
-newline$ -- 541
-num.names$ -- 716
-pop$ -- 1278
+missing$ -- 180
+newline$ -- 550
+num.names$ -- 728
+pop$ -- 1302
 preamble$ -- 1
-purify$ -- 1172
+purify$ -- 1191
 quote$ -- 0
-skip$ -- 2723
+skip$ -- 2770
 stack$ -- 0
-substring$ -- 3607
+substring$ -- 3660
 swap$ -- 22
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1605
-warning$ -- 0
-while$ -- 624
+type$ -- 1629
+warning$ -- 1
+while$ -- 634
 width$ -- 0
-write$ -- 1794
+write$ -- 1823
+(There was 1 warning)
