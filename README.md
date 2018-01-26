@@ -1,7 +1,9 @@
 # Doctoral Dissertation
-## Traci Johnson -- University of Michigan -- Dept. of Astronomy and Astrophysics
+## Traci Johnson
+### University of Michigan
+### Dept. of Astronomy and Astrophysics
 
-My doctoral dissertation from the University of Michigan in Astrophysics. Here is a link to [thesis-main.pdf](https://github.com/tracijo32/umich_dissertation/edit/master/thesis-main.pdf), the most up-to-date PDF of my written dissertation located within this Github repository.
+My doctoral dissertation from the University of Michigan in Astrophysics. Here is a link to [thesis-main.pdf](https://github.com/tracijo32/umich_dissertation/blob/master/thesis-main.pdf), the most up-to-date PDF of my written dissertation located within this Github repository.
 
 Title: "Focusing cosmic telescopes: quantifying the systematics of strong lensing mass models in the era of precision lensing"
 
@@ -13,6 +15,9 @@ Committee:
 - Professor Jon Miller
 - Professor August Evrard
 - Professor Jean-Paul Kneib, EPFL
+
+### Current status
+1/26/2018: Chapters 2-5 are complete. Introduction is about 80% of the way done and the concluding chapter has not yet been written.
 
 ### Format
 
@@ -31,4 +36,4 @@ Most of the chapters in my dissertation are based off of first-author papers I h
 All citations conform to the guidelines outlined by the American Astronomical Society publications, specifically matching guildelines for submitting papers to the Astrophysical Journal ([apj.bst](http://ads.harvard.edu/pubs/bibtex/astronat/apj/apj.bst))
 
 ### Licensing
-I have chosen to make this repository public as, eventually, I will publish it on [ProQuest](http://www.proquest.com/products-services/dissertations/) as per request by the Rackham Graduate School for all doctoral dissertations. Therefore, I have listed this repository under the MIT license, so that others writing their dissertations through Rackham can download this directory and modify the directories with their own dissertation chapters.
+I have chosen to make this repository public as, eventually, I will publish it on [ProQuest](http://www.proquest.com/products-services/dissertations/) as per request by the Rackham Graduate School for all doctoral dissertations. Therefore, I have listed this repository under the MIT license, so that others writing their dissertations through Rackham can download this repository and modify the directories with their own dissertation chapters.
