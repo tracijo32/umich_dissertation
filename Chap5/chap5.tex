@@ -1,3 +1,9 @@
+\section{Preface}
+
+This chapter has been adapted from a letter of the same title in the Astrophysical Journal Letters, Volume 843, page L21 \citep{Johnson:2017uq}, with co-authors Jane R.~Rigby, Keren Sharon, Michael D.~Gladders, Michael Florian, Matthew B.~Bayliss, Eva Wuyts, Katherine E.~Whitaker, Rachael Livermore, and Katherine T. Murray. It is fully reproduced here under the non-exclusive rights of publication granted by the American Astronomical Society to the paper authors.
+
+This project is based off of the results found in Chapter~4 and \citet{Johnson:2017fj}. I created the last three figures and provided the files for creating the first figure. I wrote some of the introduction and the figure captions. JRR wrote much of the discussion section. The both of us co-wrote the methods section.
+
 
 %==================================================================================
 %   TITLE, AUTHORS, AFFILIATIONS
@@ -6,7 +12,6 @@
 %Michael D.~Gladders\altaffilmark{3,4}, Michael Florian\altaffilmark{2}, Matthew B.~Bayliss\altaffilmark{5}, 
 %Eva Wuyts\altaffilmark{6}, Katherine E.~Whitaker\altaffilmark{7,8}$^\dagger$, 
 %Rachael Livermore$^{10}$, \& Katherine T. Murray\altaffilmark{9}}
-
 
 %==================================================================================
 %   ABSTRACT
@@ -34,21 +39,21 @@ in galaxies over most of cosmic time.
 %==================================================================================
 %   INTRODUCTION
 %==================================================================================
-\section{Introduction}\label{sec:intro}
+%\section{Introduction}\label{sec:intro}
 
 Deep field surveys with \textit{The Hubble Space Telescope}  (\hst) 
 have revealed that more than half of star-forming galaxies 
 at $1< z < 3$ exhibit clumpy morphologies in the rest-frame 
-ultraviolet \citep{Shibuya:2016}.  Motivated by these  results over 
+ultraviolet \citep{Shibuya:2016wt}.  Motivated by these  results over 
 the past decade,  a theoretical picture has emerged in which 
 1~kiloparsec is a critical size scale, perhaps {\it the} critical scale, for 
 star formation in the distant universe 
-\citep{Elmegreen:2005fv, Elmegreen:2007id, Elmegreen:2009kd, ForsterSchreiber:2011by, 
-Guo:2011cn, Guo:2015dr}.  
+\citep{Elmegreen:2005xy, Elmegreen:2007qv, Elmegreen:2009nr, Forster-Schreiber:2011sf, 
+Guo:2011rm, Guo:2015zl}.  
 In that scenario, such large clumps arise from gravitational instabilities in gas-rich disks 
-\citep{Toomre:1964fe, Noguchi:1999gm, Genzel:2011cp},
+\citep{Toomre:1964fr, Noguchi:1999vf, Genzel:2011ys},
 and are thought to highlight spots where cold gas may have accreted onto the disk 
-\citep{Keres:2005gb, Dekel:2006cn, Brooks:2009bm}.
+\citep{Keres:2005yq, Dekel:2006qf, Brooks:2009jk}.
 
 In this scenario, star formation at early times occurred in complexes that are preferentially much larger 
 than in galaxies in the local universe.  
@@ -59,14 +64,14 @@ scales smaller than about 500~pc, due to the diffraction limit.
 As a result,  the clumpy, 
 complex morphology of star formation that is known to occur 
 in nearby galaxies is normally inaccessible at the epoch when 
-most of the stars in the universe were formed (see review by \citealt{Madau:2014gt}.) 
+most of the stars in the universe were formed (see review by \citealt{Madau:2014qd}.) 
 
 A way to overcome current observational limits and test this theoretical picture is to use
-gravitational lensing by natural telescopes \citep{Einstein:1936jq, Zwicky:1937dm}.
+gravitational lensing by natural telescopes \citep{Einstein:1936cl, Zwicky:1937yq}.
 Distant galaxies can be strongly gravitationally lensed into giant arcs that are highly magnified.  
 To date, this technique has been exploited for dozens of lensed galaxies at 
 $z>1$, which have revealed the importance of star-forming clumps with spatial 
-scales down to several hundreds parsecs (e.g.~\citealt{Livermore:2012gw, Jones:2010hp}.)
+scales down to several hundreds parsecs (e.g.~\citealt{Livermore:2012fk, Jones:2010uq}.)
 
 Our \textit{HST} program (GO 13003) observed 
 $\approx 70$ giant arcs behind 
@@ -75,18 +80,18 @@ Sloan Giant Arcs Survey (SGAS; Gladders et al., in prep).
 SGAS is a survey for strongly lensed, highly magnified galaxies selected from 
 the Sloan Digital Sky Survey (SDSS).  
 Galaxy clusters were selected from the SDSS photometric catalog using the 
-red sequence method \citep{Gladders:2000ca}; cluster fields were 
+red sequence method \citep{Gladders:2000kq}; cluster fields were 
 then systematically searched for giant arcs.
 Candidates lenses were confirmed, then followed up with an extensive
 ground- and space-based observational campaign.
-A full description of the SGAS-HST program will appear in Sharon et al.\ (2017, in prep). 
+A full description of the SGAS-HST program will appear in Sharon et al.\ (2018, in prep). 
 This Letter concerns one target from that larger program, \giantarc, hereafter \arcname.
 
 In this Letter, we use the gravitationally lensed galaxy 
 arcname\ to provide a 
 remarkably sharp view into how stars form in the distant universe.
 The giant arc, at redshift $z=2.481$, is comprised of three images of the galaxy with a 
-total magnification of \totalmagnification\  (Figure~\ref{fig:HSTimage}.) 
+total magnification of \totalmagnification\  (Figure~\ref{chap5:fig:HSTimage}.) 
 
 High spatial resolution, provided by rest-frame UV imaging with \textit{HST} plus 
 lensing magnification,  and combined with a new forward-modelling technique 
@@ -96,14 +101,14 @@ There is also a spatially extended component with rest-frame UV color indistingu
 from that of the clumps  (Rigby et al.\ 2017, hereafter Paper~II).
 \arcname\ is forming stars at a rate of  $8.5$$^{+8}_{-0.4}$~$^{+4}_{-2}$~M$_{\odot}$ yr$^{-1}$ 
 (uncertainties from SED fitting, and from the magnification uncertainty; Paper~II.)
-The galaxy's stellar mass is $\log M^* = 9.24$~\Msol, with associated uncertainties of 
+The galaxy's stellar mass is $\log M^* = 9.24$~M$_\odot$, with associated uncertainties of 
  $^{+0.11}_{-0.15}$  from SED fitting and 
 $^{+0.08}_{-0.12}$ from the magnification uncertainty (Paper~II).
-\revisedApJ{This stellar mass is comparable to the median $\log M^* = 9.4$~\Msol\ for the 
-lensed sample with H$\alpha$ measurements from \citet{Livermore:2015ck}.}
+This stellar mass is comparable to the median $\log M^* = 9.4$~M$_\odot$ for the 
+lensed sample with H$\alpha$ measurements from \citet{Livermore:2015ve}.
 The peak contribution to the global star formation rate density at $z\sim2$ comes 
 from galaxies with about ten times higher stellar mass, with galaxies of the stellar 
-mass of \arcname\ contributing three to five times less \citep{Leja:2015fx}.
+mass of \arcname\ contributing three to five times less \citep{Leja:2015si}.
 Were \arcname\ not lensed, \hst\ would measure it to 
 be forming stars in a smooth, exponential disk, with a size and structure that is 
 typical for galaxies of its redshift and stellar mass (Paper~II).
@@ -131,9 +136,9 @@ star formation at cosmic noon on spatial scales well below 100~pc.
 This Letter builds on the results from Paper~I and Paper~II.
 In Paper~I, we constructed a source-plane model of the unlensed image
 of each of the emission clumps in \arcname, 
-\revisedApJ{modeling each clump as a Gaussian 
+modeling each clump as a Gaussian 
 parameterized by its half-width-at-half-maximum (HWHM) size 
-and its intrinsic flux normalization.}
+and its intrinsic flux normalization.
 Paper~I also provides an estimate of the  
 $80\%$ flux completeness limit of 
 \fluxcompleteness\ (the magnitude at which artificially injected clumps were recovered 
@@ -149,7 +154,7 @@ In this work, we estimate the star formation rates (SFR) of the clumps in
 To obtain the intrinsic rest-frame ultraviolet flux density, we integrate 
 the 2D Gaussian that best fits the F606W source-plane reconstruction of each clump, 
 and divide by ($1+z$) to correct for bandwidth compression.  
-We use Equation~1 of \citet{Kennicutt:1998ki}
+We use Equation~1 of \citet{Kennicutt:1998ee}
 to estimate the SFR, 
 with a correction factor of 1.8 to convert the initial mass function from Salpeter to Chabrier.
 In calculating SFRs, we assumed no extinction, 
@@ -158,16 +163,16 @@ energy distribution (Paper~II).
 
 In the following sections, we compare our results to
 measurements of SFR inferred from Paschen~$\alpha$ luminosities
-of H~II regions in nearby galaxies \citep{Liu:2013fw}.
+of H~II regions in nearby galaxies \citep{Liu:2013qy}.
 To convert the Paschen~$\alpha$ inferred rate, we use Equation 2 of
-\citet{Kennicutt:1998ki}, with the same correction factor for the initial mass function.
+\citet{Kennicutt:1998ee}, with the same correction factor for the initial mass function.
 %correction factor of 1.8 to convert the IMF to Chabrier.
 We take \HaParatio\ as the intrinsic H$\alpha$/Pa$\alpha$ ratio, 
-which assumes Case B recombination, $T=10^4$~K, and $n_e =100$~\cc .
+which assumes Case B recombination, $T=10^4$~K, and $n_e =100$~cm$^{-3}$ .
 
 We assume a flat cosmology with $\Omega_M = 0.3$, $\Omega_{\Lambda} = 0.7$, 
-and $H_0 = 70$~\kms~Mpc$^{-1}$.
-In this cosmology, an angular size of 1\arcsec\ 
+and $H_0 = 70$~km s$^{-1}$~Mpc$^{-1}$.
+In this cosmology, an angular size of 1" 
 corresponds to an angular diameter distance of 8.085~kpc at the 
 redshift of \arcname\ at $z=$\zA . 
 
@@ -177,49 +182,49 @@ The physical properties of individual star-forming clumps in
 literature, by examining the size--SFR space, and the
 distributions of sizes and SFRs of individual clumps or galaxies. 
 
-In Figure~\ref{fig:surfacedensity}, we consider the surface density of star formation
+In Figure~\ref{chap5:fig:surfacedensity}, we consider the surface density of star formation
 in the individual clumps in \arcname.
-This plot, developed by \citet{Livermore:2012gw} and \citet{Livermore:2015ck}, 
+This plot, developed by \citet{Livermore:2012fk} and \citet{Livermore:2015ve}, 
 is a way to parameterize the intensity of star formation.
 We compare to literature measurements of galaxies at
 a range of redshifts, from $z=0$ to $z=5$, both lensed and unlensed, 
-mostly compiled by  \citet{Livermore:2015ck}.
+mostly compiled by  \citet{Livermore:2015ve}.
 
 For \arcname, the SFR is inferred from the rest-frame ultraviolet
 (F606W filter) as explained in \S~\ref{sec:methods}.
 In the comparison samples, the star formation rates for most of the
 measurements come from H$\alpha$, 
-with the exception of the \citet{Swinbank:2007er} and
-\citet{Swinbank:2009bb} samples, 
+with the exception of the \citet{Swinbank:2007wj} and
+\citet{Swinbank:2009lk} samples, 
 which use the [O II]~3727, 3729~\AA\ doublet. 
-Local measurements come from the SINGS galaxy sample \citep{Kennicutt:2003jt} and 
-the DYNAMO $z\sim 0.1$ sample \citep{Fisher:2016jp}.  
-Relative to \citet{Livermore:2015ck}, we have changed how the $z=0$ SINGS galaxies 
-are plotted; since \citet{Livermore:2015ck} did not probe as small
+Local measurements come from the SINGS galaxy sample \citep{Kennicutt:2003xq} and 
+the DYNAMO $z\sim 0.1$ sample \citep{Fisher:2017tk}.  
+Relative to \citet{Livermore:2015ve}, we have changed how the $z=0$ SINGS galaxies 
+are plotted; since \citet{Livermore:2015ve} did not probe as small
 clumps sizes as we do here, they had binned each galaxy and applied a surface brightness threshold,  
 to match the spatial resolution and depth of their sample of lensed galaxies.
 Here, we re-measure the SINGS galaxies without binning.  % Email from Rachael 13 July 2016
-We note that of the $z\ga 1$ galaxies, the % 
-samples of  \citet{Swinbank:2012gs} and %WiggleZ 
-\citet{Wisnioski:2012cba} samples are not gravitationally lensed, whereas 
+We note that of the $z\sim 1$ galaxies, the % 
+samples of  \citet{Swinbank:2012jk} and %WiggleZ 
+\citet{Wisnioski:2012qf} samples are not gravitationally lensed, whereas 
 the other distant galaxy samples are lensed. 
 
-In Figures~\ref{fig:sfr_distrib} and~\ref{fig:size_distrib}, we plot the differential luminosity
+In Figures~\ref{chap5:fig:sfr_distrib} and~\ref{chap5:fig:size_distrib}, we plot the differential luminosity
 function of clumps in \arcname, and differential distribution of clump
-sizes, respectively, and compare them to measurements from the nearby universe \citep{Liu:2013fw}.
+sizes, respectively, and compare them to measurements from the nearby universe \citep{Liu:2013qy}.
 
 We measure the SFR surface density at $z\sim2.5$ for star-forming clumps 
 with radii below 100 pc.  To the best of our knowledge, this is the first time 
 that size scales well below 100~pc have been measured in the distant universe. 
-In Figure~\ref{fig:surfacedensity}, the clumps from \arcname\ 
+In Figure~\ref{chap5:fig:surfacedensity}, the clumps from \arcname\ 
 follow the $1.5<z<3$ line of constant star formation surface density 
-that has been measured \citep{Livermore:2015ck},  for larger size scales, at this epoch.
-Thus, we confirm previous results \citep{Livermore:2012gw, Livermore:2015ck} 
+that has been measured \citep{Livermore:2015ve},  for larger size scales, at this epoch.
+Thus, we confirm previous results \citep{Livermore:2012fk, Livermore:2015ve} 
 that star-forming clumps in bright lensed
 $z\sim2$ galaxies have high star formation surface density, 
 considerably higher than observed in the  $z\sim 0$ 
-\revisedApJ{SINGS sample \citep{Kennicutt:2003jt} comparison sample, and 
-comparable to those observed in the $z\sim 0$ \citet{Fisher:2016jp} sample.}
+SINGS sample \citep{Kennicutt:2003xq} comparison sample, and 
+comparable to those observed in the $z\sim 0$ \citet{Fisher:2017tk} sample.
 
 Twenty-two percent of the rest-frame ultraviolet light of \arcname\ arises from 
 more than twenty star-forming clumps, with measured sizes of  \rangeofscales. 
@@ -227,39 +232,39 @@ The largest clump we measure is \largestclump.
 
 The clump luminosity function shows a similar slope 
 and normalization to that observed for Pa$\alpha$ at $z\sim0$.  
-Figure~\ref{fig:sfr_distrib} shows \revisedApJ{reasonably good agreement}, 
+Figure~\ref{chap5:fig:sfr_distrib} shows reasonably good agreement, 
 in the range of overlap, 
 between the luminosity function we measure for \arcname\ and that measured
-using Pa$\alpha$ for nearby galaxies by \citet{Liu:2013fw}.  A detailed comparison is
+using Pa$\alpha$ for nearby galaxies by \citet{Liu:2013qy}.  A detailed comparison is
 premature given that we are only examining one galaxy, but this result
 indicates the value of expanding such comparisons to larger samples of lensed galaxies.
 
- The distribution function of clump size \revisedApJ{(Figure~\ref{fig:size_distrib})} 
+ The distribution function of clump size (Figure~\ref{chap5:fig:size_distrib})
 is dominated by smaller clumps 
 ($r\sim 30$--40~pc), and shows a notable lack of the larger ($40<r<100$~pc) clumps 
 that dominate the size distribution seen for P$\alpha$ at 
-$z\sim0$ \citep{Liu:2013fw}.  
+$z\sim0$ \citep{Liu:2013qy}.  
 Simulations (Paper~I) indicate that the smallest size scale we can recover in \arcname\ is 
 about \smallestscale.
 Stochasticity is doubtless a factor at the larger sizes, given that we are only examining one galaxy,
 and prevents any comparison of the slope with the power law observed at larger sizes
-by \citet{Liu:2013fw}.
+by \citet{Liu:2013qy}.
  
 \section{Discussion}
-Previous measurements \citep{Livermore:2012gw, Livermore:2015ck}   
+Previous measurements \citep{Livermore:2012fk, Livermore:2015ve}   
 of the evolution of star formation surface density  over cosmic time
-shown in Figure~\ref{fig:surfacedensity} 
+shown in Figure~\ref{chap5:fig:surfacedensity} 
 have been interpreted as evidence that galaxies
 become more extreme with increasing redshift, evolving toward 
 higher star formation surface densities.  However, there are important selection effects at work.
-The lensed galaxies plotted in Figure~\ref{fig:surfacedensity} are generally of high surface brightness.
+The lensed galaxies plotted in Figure~\ref{chap5:fig:surfacedensity} are generally of high surface brightness.
 Since lensing preserves surface brightness, and surface brightness dimming scales as $(1+z)^4$, 
 we would expect only regions of high surface brightness to be observable in these galaxies \citep{Calvi:2014bm}.
-Indeed,  Figure~\ref{fig:surfacedensity} shows that for \arcname, 
-we could {\bf not} recover clumps with the typical surface brightnesses of 
-$r<100$~pc clumps from SINGS, but we {\bf could} 
+Indeed,  Figure~\ref{chap5:fig:surfacedensity} shows that for \arcname, 
+we could not recover clumps with the typical surface brightnesses of 
+$r<100$~pc clumps from SINGS, but we could
 recover clumps with typical surface brightnesses of the $z\sim 0.1$ DYNAMO 
-sample \citep{Fisher:2016jp}.
+sample \citep{Fisher:2017tk}.
 
 Given this, we cannot rule out a picture in which the star formation in \arcname\ 
 is even clumpier than we can measure, and that the clumps we detect are only the 
@@ -267,12 +272,12 @@ brightest with highest surface brightness.  This would explain why
 the spatially extended (``diffuse'') component shows the same 
 rest-frame UV color as the clumps (Paper~II).
 
-The previous use of SINGS \citep{Kennicutt:2003jt} as the 
-$z=0$ comparison sample \revisedApJ{may have} exaggerated 
-the contrast between $z\sim0$ and $z\ga1$, 
+The previous use of SINGS \citep{Kennicutt:2003xq} as the 
+$z=0$ comparison sample may have exaggerated 
+the contrast between $z\sim0$ and $z>1$, 
 since the SINGS sample, by selection, does not include vigorously star-forming galaxies. 
-By contrast, Figure~\ref{fig:surfacedensity} shows that 
-the clumps from the $z\sim 0.1$ DYNAMO galaxies \citep{Fisher:2016jp} 
+By contrast, Figure~\ref{chap5:fig:surfacedensity} shows that 
+the clumps from the $z\sim 0.1$ DYNAMO galaxies \citep{Fisher:2017tk} 
 have star formation surface densities
 an order of magnitude higher than those of the SINGS galaxies, and
 indeed just as high as those seen at $z \sim 2$.
@@ -312,27 +317,27 @@ present day telescopes.
 % This is Keren's new paragraph
 To the best of our knowledge, the only other estimates for star
 forming regions as small as the ones we are measuring at these
-redshifts come from observations of the Frontier Fields \citep{Lotz:2017ic}, 
-using 140-orbits of \hst\ \revisedApJ{per cluster}.
+redshifts come from observations of the Frontier Fields \citep{Lotz:2017gd}, 
+using 140-orbits of \hst\ per cluster.
 \citet{Vanzella:2017wd,Vanzella:2017ea} report the discovery of three young, compact star clusters
 at redshift $z\sim3.2$, behind the lensing clusters MACS~J0416 and AS1063, 
 with effective radii of $R_e \sim30-80$ pc.
 
 In the local universe, star formation on such small spatial scales
-would not be surprising (c.f. \citealt{Liu:2013fw},  Larson et al.\ in prep.). 
+would not be surprising (c.f. \citealt{Liu:2013qy},  Larson et al.\ in prep.). 
 However, our result runs contrary to a theoretical picture that has emerged over the past decade: 
 that 1~kiloparsec is a critical size scale, perhaps {\it the} critical scale, for 
 star formation in the distant universe 
-\citep{Elmegreen:2005fv, Elmegreen:2007id, Elmegreen:2009kd, ForsterSchreiber:2011by, 
-Guo:2011cn, Guo:2015dr}, driven by gravitational instabilities in gas-rich disks 
-\citep{Toomre:1964fe, Noguchi:1999gm, Genzel:2011cp},
-in sites of cold gas accretion \citep{Keres:2005gb, Dekel:2006cn, Brooks:2009bm}.
+\citep{Elmegreen:2005xy, Elmegreen:2007qv, Elmegreen:2009nr, Forster-Schreiber:2011sf, 
+Guo:2011rm, Guo:2015zl}, driven by gravitational instabilities in gas-rich disks 
+\citep{Toomre:1964fr, Noguchi:1999vf, Genzel:2011ys},
+in sites of cold gas accretion \citep{Keres:2005yq, Dekel:2006qf, Brooks:2009jk}.
 Our measurements form a cautionary counter-example to this picture,
 indicating that star formation can happen on much smaller scales in the distant universe.
 
-\revisedApJ{This Letter examines just one of the $\sim70$ SGAS lensed galaxies 
+This Letter examines just one of the $\sim70$ SGAS lensed galaxies 
 imaged by \textit{HST}.  Future application of the techniques of Paper~I to the full sample 
-will provide a much richer picture of star formation on small spatial scales at high redshift.}
+will provide a much richer picture of star formation on small spatial scales at high redshift.
 
 In conclusion, the exceptionally fortuitous lensing geometry in \arcname,
 combined with new lensing methods (Paper I), 
@@ -349,8 +354,8 @@ resolution by  future UV/optical space telescopes.
 
 
 \begin{figure*}
-\includegraphics[width=6.7in,angle=0]{f1.pdf} %Figs/PRfig1_try2.png}
-\caption{The lensed galaxy \arcnamelong . The left panel shows
+\includegraphics[width=\textwidth,angle=0]{Chap5/f1.pdf} %Figs/PRfig1_try2.png}
+\caption{The lensed galaxy \giantarc . The left panel shows
 the \hst\ imaging in filters F105W, F606W, and F390W, with the three images
 of \arcname\ labeled.  Image A2, the most highly magnified, is highlighted
 with a box. The right panel shows our reconstruction of this lensed
@@ -359,47 +364,47 @@ are obvious in the reconstructed image; all have sizes much smaller
 than the kiloparsec scales typically probed by unlensed surveys of distant galaxies, 
 and several times smaller than previously probed by gravitational lensing.
 }
-\label{fig:HSTimage}
+\label{chap5:fig:HSTimage}
 \end{figure*}
 
 \begin{figure*}
-\includegraphics[width=6.5in,angle=0]{f2.pdf} %{Figs/SFR_vs_size_606_Mar10.pdf}
+\includegraphics[width=\textwidth,angle=0]{Chap5/f2.pdf} %{Figs/SFR_vs_size_606_Mar10.pdf}
 \caption{The star formation -- radius relation.  
 In green, we plot the results from this work:
-clumps from lensed galaxy  \arcnamelong\ at z$=$\zA,  
+clumps from lensed galaxy  \giantarc\ at z$=$\zA,  
 with star formation rates and sizes estimated 
 from the rest-frame ultraviolet (F606W filter).  A reddening vector shows how the 
 star formation rates inferred from the rest-frame ultraviolet would increase 
 due to 1 magnitude of extinction (A$_v=1$).
 The vertical green stripe is the lensing PSF, with the interquartile range 
 as the inner region, and the full range measured as the outer region. 
-In the \revisedApJ{five cases} 
+In the five cases
 where the lensing PSF was larger than the measured size,
 we plot the size as an upper limit, set at the lensing PSF. 
 The horizontal dashed line is the $80\%$ completeness limit determined
 in Paper~I, corresponding to a source plane flux of \fluxcompleteness.
 Comparison samples from the literature are over-plotted 
-\citep{Swinbank:2007er, Swinbank:2009bb, Jones:2010hp, Wisnioski:2012cba, 
-Livermore:2012gw, Swinbank:2012gs, Wuyts:2014eu, Livermore:2015ck, Fisher:2016jp}; 
+\citep{Swinbank:2007wj, Swinbank:2009lk, Jones:2010uq, Wisnioski:2012qf, 
+Livermore:2012fk, Swinbank:2012jk, Wuyts:2014uq, Livermore:2015ve, Fisher:2017tk}; 
 for most,   the star formation rate was measured using H$\alpha$; 
 for the $z\sim5$ galaxies [O II] 3727 was used instead.  
-\revisedApJ{Diagonal dashed lines show the best fit relations in four redshift bins
-from \citet{Livermore:2015ck}.}
-This figure is adapted from \citet{Livermore:2012gw} and \citet{Livermore:2015ck}, 
+Diagonal dashed lines show the best fit relations in four redshift bins
+from \citet{Livermore:2015ve}.
+This figure is adapted from \citet{Livermore:2012fk} and \citet{Livermore:2015ve}, 
 though unlike that work, we do not filter the SINGS H$\alpha$ images 
-\citep{Kennicutt:2003jt} to 
+\citep{Kennicutt:2003xq} to 
 match the literature measurements at $z\sim1$--1.5, but instead
 use those images at their native resolution and depth.
-\revisedApJ{Of the two$z\sim0$ samples, \citet{Kennicutt:2003jt}  was chosen 
-to represent ``normal'' galaxies, while \citet{Fisher:2016jp} have  
-higher star formation rates.}
+Of the two$z\sim0$ samples, \citet{Kennicutt:2003xq}  was chosen 
+to represent ``normal'' galaxies, while \citet{Fisher:2017tk} have  
+higher star formation rates.
 }
-\label{fig:surfacedensity}
+\label{chap5:fig:surfacedensity}
 \end{figure*}
 
 
 \begin{figure*}
-\includegraphics[width=6in]{f3.pdf} %{Figs/SFR_distribution_liu.pdf} 
+\includegraphics[width=\textwidth]{Chap5/f3.pdf} %{Figs/SFR_distribution_liu.pdf} 
 \caption{The differential luminosity function of star-forming clumps.  
 The median of the incompleteness-corrected 
 aggregate posterior distribution function of clump
@@ -411,32 +416,28 @@ Markov Chain Monte Carlo forward modeling described in Paper~I,
 and normalized to the number of clumps per galaxy.
 The shaded region shows the 16th and 84th percentiles.
 The black steps show the corresponding normalized distribution for H~II regions in the nearby 
-universe \citep{Liu:2013fw}, measured using Paschen $\alpha$, %from Figures 10 and 11 
+universe \citep{Liu:2013qy}, measured using Paschen $\alpha$, %from Figures 10 and 11 
  and normalized by the number of galaxies.
-}\label{fig:sfr_distrib}
+}\label{chap5:fig:sfr_distrib}
 \end{figure*}
 
 
 \begin{figure*}
-\includegraphics[width=6in]{f4.pdf} %{Figs/size_distribution_liu.pdf}
+\includegraphics[width=6in]{Chap5/f4.pdf} %{Figs/size_distribution_liu.pdf}
 \caption{The differential distribution function of star-forming clump size (radius). 
 The median of the incompleteness--corrected posterior probability 
 density function for \arcname, filter F606W, is plotted as the blue line. 
 The shaded region shows the 16th and 84th percentiles.
 Radii for \arcname\ are half width at half maximum (HWHM).
-Radii from the $z\sim0$ comparison sample \citep{Liu:2013fw} are 
-isophotal  from HIIphot \citep{Thilker:2000dt}.
+Radii from the $z\sim0$ comparison sample \citep{Liu:2013qy} are 
+isophotal  from HIIphot \citep{Thilker:2000om}.
 Given these different techniques for measuring size,
 we expect a normalization offset; 
 for lensed galaxies the isophotal sizes can be $\sim25\%$ larger than 
-Gaussian sizes \citep{Livermore:2012gw}.
+Gaussian sizes \citep{Livermore:2012fk}.
  The vertical stripes are the lensing PSF limits.  
 Stochastic effects are likely to blame for the mismatch at large sizes.
 }
-\label{fig:size_distrib}
+\label{chap5:fig:size_distrib}
 \end{figure*}
-
-
-
- \end{document}
 
