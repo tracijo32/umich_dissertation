@@ -11,8 +11,8 @@ Author: Traci Johnson
 
 Committee:
 - Assistant Professor Keren Sharon (Chair)
-- Professor Jean-Paul Kneib, EPFL
 - Professor August Evrard
+- Professor Jean-Paul Kneib, EPFL
 - Associate Professor Chris Miller
 - Professor Jon Miller
 
