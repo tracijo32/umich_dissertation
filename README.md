@@ -10,14 +10,14 @@ Title: "Focusing cosmic telescopes: quantifying the systematics of strong lensin
 Author: Traci Johnson
 
 Committee:
-- Professor Keren Sharon (Chair)
+- Assistant Professor Keren Sharon (Chair)
+- Professor Jean-Paul Kneib, EPFL
+- Professor August Evrard
 - Associate Professor Chris Miller
 - Professor Jon Miller
-- Professor August Evrard
-- Professor Jean-Paul Kneib, EPFL
 
 ### Current status
-1/26/2018: Chapters 2-5 are complete. Introduction is about 80% of the way done and the concluding chapter has not yet been written.
+2/1/2018: Chapters 2-5 are complete. Introduction is complete. Final chapter started.
 
 ### Format
 
@@ -33,7 +33,9 @@ Most of the chapters in my dissertation are based off of first-author papers I h
 - Chapter 5: [Star Formation at z = 2.481 in the Lensed Galaxy SDSS J1110+6459: Star Formation Down to 30 pc Scales](http://adsabs.harvard.edu/abs/2017ApJ...843L..21J), Traci L. Johnson, Jane R. Rigby, Keren Sharon, Michael D. Gladders, Michael Florian, Matthew B. Bayliss, Eva Wuyts, Katherine E. Whitaker, Rachael Livermore, Katherine T. Murray, ApJL, 843, 21L.
 
 ### References
-All citations conform to the guidelines outlined by the American Astronomical Society publications, specifically matching guildelines for submitting papers to the Astrophysical Journal ([apj.bst](http://ads.harvard.edu/pubs/bibtex/astronat/apj/apj.bst))
+All citations conform to the guidelines outlined by the American Astronomical Society publications, specifically matching those for submitting papers to the Astrophysical Journal ([apj.bst](http://ads.harvard.edu/pubs/bibtex/astronat/apj/apj.bst))
 
 ### Licensing
-I have chosen to make this repository public as, eventually, I will publish it on [ProQuest](http://www.proquest.com/products-services/dissertations/) as per request by the Rackham Graduate School for all doctoral dissertations. Therefore, I have listed this repository under the MIT license, so that others writing their dissertations through Rackham can download this repository and modify the directories with their own dissertation chapters.
+&copy; Traci Lin Johnson 2018
+
+This work is the intellectual property of (soon Dr.) Traci Johnson. I have chosen to make this repository public as, eventually, I will publish it on [ProQuest](http://www.proquest.com/products-services/dissertations/) as per request by the Rackham Graduate School for all doctoral dissertations. Therefore, I have listed this repository under the MIT license, so that others writing their dissertations through Rackham can download this repository and modify the directories with their own dissertation chapters.
