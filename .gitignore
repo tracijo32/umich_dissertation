@@ -9,3 +9,5 @@
 *.toc
 *.sh
 *.dvi
+*.DS_Store
+
