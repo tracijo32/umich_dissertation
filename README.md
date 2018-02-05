@@ -17,7 +17,7 @@ Committee:
 - Professor Jon Miller
 
 ### Current status
-2/1/2018: Chapters 2-5 are complete. Introduction is complete. Final chapter started.
+2/5/2018: First complete draft ready for evaluation by committee members.
 
 ### Format
 
