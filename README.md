@@ -17,7 +17,7 @@ Committee:
 - Professor Jon Miller
 
 ### Current status
-2/5/2018: First complete draft ready for evaluation by committee members.
+3/17/2018: Final draft in progress. Incorporated comments from KS. Due April 3rd, 5pm.
 
 ### Format
 
