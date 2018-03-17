@@ -1,14 +1,14 @@
 \section{Preface}
 
-This chapter highlights a work-in-progress I have been pursuing on quantifying systematics in clusters with few constraints. The mass distributions of the simulations were generously provided by to me by Nan~Li.
+This chapter highlights a proof-of-concept on quantifying systematics in clusters with few constraints. The mass distributions of the simulations were generously provided to me by Nan~Li.
 
 \section{Introduction}
 
-To quantify the systematics of lens modeling for clusters typically found in surveys, we need to take similar approaches as we have done in Chap~\ref{chap:ares_systematics} and look to simulations. In this chapter, I will present an example of what such an analysis might look like.
+To quantify the systematics of lens modeling for clusters typically found in surveys, we need to take similar approaches as we have done in Chapter~\ref{chap:ares_systematics} and look to simulations. In this chapter, I will present an example of what such an analysis might look like.
 
 \section{The simulated cluster}
 
-For this analysis, I will be using a cluster created in an N-body simulation using the Hardware/Hybrid Accelerated Cosmology Code \citep[HACC; ][]{Habib:2016cy}. This code includes both baryons and dark matter; however only accounts for gravitational interactions. Therefore, any feedback mechanisms as the galaxies form are ignored as well as ram pressure stripping which can truncate galaxy halos as they fall into the cluster and pass through the hot intercluster medium. \citet{Li:2016ek} searched the resulting clusters for those which produce significant critical curves at $z=2$, and using a Pipeline for Images of Cosmological Strong lensing (PICS), have generated many realistic images of strong lensing systems. For this particular exercise, I have selected one of these lensing systems, a seemingly-relaxed cluster at $z=0.349$, shown in Figure~\ref{chap6:fig:cluster}.
+For this analysis, I will be using a cluster created in an N-body simulation using the Hardware/Hybrid Accelerated Cosmology Code \citep[HACC; ][]{Habib:2016cy}. This code includes both baryons and dark matter; however only accounts for gravitational interactions. Therefore, any feedback mechanisms of the galaxies form are ignored as well as ram pressure stripping which can truncate galaxy halos as they fall into the cluster and pass through the hot intercluster medium. \citet{Li:2016ek} searched the resulting clusters for those which produce significant critical curves at $z=2$, and using a Pipeline for Images of Cosmological Strong lensing (PICS), have generated many realistic images of strong lensing systems. For this particular exercise, I have selected one of these lensing systems, a seemingly-relaxed cluster at $z=0.349$, shown in Figure~\ref{chap6:fig:cluster}.
 
 \begin{figure}
 \centering
@@ -47,7 +47,7 @@ Clearly this analysis is very shallow and requires several more aspects that are
 \item Baryons: Simulations need to account for the distribution of baryons as well as the physics beyond gravity which can influence their distributions. Since the lens modeling method used here assumes that light traces mass, we need to know where the baryons are to infer where the mass is and to test how well this assumption works when tested against the simulation.
 \item Image configurations: Certain image configurations may allow for better constraints in certain parts of the image plane. For example: using radial images allows for a better constraint on the innermost part of the mass profile. Similarly, if images are located very close together in the image plane, only the parts of the image plane near those images will be better constrained than others. In this analysis, we looked at the magnification of a single image; however, we have not included information related to the other image systems from which those models were created.
 \item Other types of clusters: Some clusters can produce more elongated critical curves as a result of their shapes or because they are in the process of merging with another cluster. These effects can produce different image configurations which could cause different systematic errors that we may or may not see in the cluster we have chosen.
-\item Redshift distribution of images: Since the location of the Einstein radius depends on the redshift of the background source, the mass will be better constrained the radii where the images are located. Similarly, the location of the critical curves will be best constrained for redshifts of images used in the models. 
+\item Redshift distribution of images: Since the location of the Einstein radius depends on the redshift of the background source, the surface mass density will be better constrained at the radii where the images are located. Similarly, the location of the critical curves will be best constrained for redshifts of images used in the models. 
 \end{itemize}
 
 More in-depth analyses of the systematics of lensing clusters with few constraints taking into account these aspects will be explored further in the future.
