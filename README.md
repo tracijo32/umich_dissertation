@@ -17,7 +17,7 @@ Committee:
 - Professor Jon Miller
 
 ### Current status
-3/25/2018: Final draft in progress. Incorporated comments from KS, JMM, AEE. Due April 3rd, 5pm.
+3/29/2018: Final draft in progress. Incorporated comments from KS, JMM, AEE. Due April 3rd, 5pm.
 
 ### Format
 
